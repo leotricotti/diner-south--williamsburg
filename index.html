@@ -20,6 +20,10 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Diner | South Williamsburg, Brooklyn">
     <meta name="twitter:image" content="https://images.getbento.com/2xT22bY6Rpe68JydsGxA_diner-logo.png?w=1200&amp;fit=fill&amp;auto=compress,format&amp;h=600&amp;bg=EDEDF1&amp;pad=100">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">   
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon">
     <!-- CSS -->
@@ -31,8 +35,18 @@
 <body>
 
     <header class="header-container">
+        <div class="header" >  
+            <a class="logo-container" href="/">
+                <img class="logo" src="img/header/diner-logo.png" alt="Logo restaurant">
+            </a>
+            <button class="nav-toggle">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </button>
+        </div>    
         <nav class="nav-container">
-            <ul class="nav">
+            <ul class="nav-menu">
                 <li class="nav-item">
                     <a href="#">
                         HORAS Y UBICACIÓN
@@ -40,7 +54,7 @@
                 </li>
                 <li class="nav-item">
                     <a href="#">
-                        MENUS
+                        MENÚS
                     </a>
                 </li>
                 <li class="nav-item">
@@ -62,7 +76,7 @@
         </nav>
     </header>
 
-
+    <script src="js/script.js"></script>
     
 </body>
 </html>
