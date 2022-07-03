@@ -81,10 +81,6 @@ a {
     text-transform: uppercase;
 }
 
-.hours a {
-    color: #7c7c7c;
-}
-
 .nav-menu-visible {
     transform: translateY(0%);
 }
@@ -297,6 +293,8 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-end;
+
 }
 
 .map-container img {
@@ -306,12 +304,12 @@ a {
 
 .btn-map {
     background-color: #2e2e2e;
-    position: relative;
+    position: absolute;
     width: 40%;
     padding: 12px 5px;
-    top: 350px;
     z-index: 999;
     border: 1px solid #fff;
+    margin-bottom: 50px;
 }
 
 .btn-map a {
