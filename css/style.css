@@ -23,14 +23,19 @@ a {
     text-decoration: none;
 }
 
+/* Grid */
+
+.main-grid {
+    grid-template: "header" "home" "row1" "row2" "row3" "row4" "img-bottom" "footer";
+}
 
 /* Header */
 
 .header-container {
+    grid-area: header;
     background-color: #000;
     width: 100%;
     height: 54px;
-    border-bottom: 1px solid #fff;
 }
 
 .header {
@@ -63,9 +68,10 @@ a {
     position: relative;
     top: 100px;
     width: 100%;
-    height: 50px;
+    line-height: 80px;
     text-align: center;
-}   
+    font-weight: 300;
+}
 
 .nav-item a {
     color: #fff;
@@ -92,44 +98,137 @@ a {
 
 /* Home Page */
 
+.home {
+    grid-area: home;
+    width: 100%;
+    height: auto;
+}
+
 .home img{
     width: 100%;
+    height: auto;
 }
 
 /* Galery */
 
-.main-grid {
-    grid-template: "row1" "row2" "row3" "row4" 1fr;
-}
-
 .galery-item-1 {
     grid-area: row1;
     width: 100%;
+    height: auto;
     padding: 8px 10px 0 10px;
 }
 
 .galery-item-2 {
     grid-area: row2;
     width: 100%;
+    height: auto;
     padding: 8px 10px;
 }
 
 .galery-item-3 {
     grid-area: row3;
     width: 100%;
+    height: auto;
     padding: 0 10px;
 }
 
 .galery-item-4 {
     grid-area: row4;
     width: 100%;
+    height: auto;
     padding: 8px 10px 0 10px;
 }
 
 .galery-item-bottom {
+    grid-area: img-bottom;
     width: 100%;
-    height: 100%;
+    height: auto;
+    padding: 10px 0;
 }
 
+/* Footer */
 
+.footer {
+    grid-area: footer;
+    width: 100%;
+}
 
+.hospitality {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 0;
+    line-height: 60px;
+    text-align: center;
+}
+
+.hospitality-item-uno img {
+    width: 112.23px;
+    height: 23.33px;
+}
+
+.hospitality-item-dos img {
+    width: 123.5px;
+    height: 21.16px;
+}
+
+.hospitality-item-tres img {
+    width: 43.23px;
+    height: 23.33px;
+}
+
+.hospitality-item-cuatro img {
+    width: 49.72px;
+    height: 23.33px;
+}
+
+.hospitality-item-cinco img {
+    width: 123.5px;
+    height: 21.91px;
+}
+
+.hospitality-item-seis img {
+    width: 123.5px;
+    height: 19.44px;
+}
+
+.hospitality-item-siete img {
+    width: 38.45px;
+    height: 23.33px;
+}
+
+.hospitality-item-ocho img {
+    width: 48.09px;
+    height: 23.33px;
+}
+
+.hospitality-item-nueve img {
+    width: 43.23px;
+    height: 23.33px;
+}
+
+.hospitality-item-diez img {
+    width: 14.58px;
+    height: 23.33px;
+}
+
+/* Mobi-Sicky */
+
+.mobi-sticky {
+    width: 100%;
+    height: 25px;
+    border: 1px solid #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.mobi-sticky ul {
+    line-height: 2px;
+}
+
+.mobi-footer-item a {
+    color: #fff;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
