@@ -1,5 +1,6 @@
 /* Fonts */
-/* font-family: 'Nanum Gothic', sans-serif; */
+
+/* font-family: 'Roboto', sans-serif; */
 
 * {
     margin: 0;
@@ -26,7 +27,8 @@ a {
 /* Grid */
 
 .index-grid {
-    grid-template: "header" "home" "row1" "row2" "row3" "row4" "img-bottom" "footer";
+    display: grid;
+    grid-template: "header" "home" "main" "img-bottom" "footer";
 }
 
 /* Header */
@@ -35,7 +37,6 @@ a {
     grid-area: header;
     background-color: #000;
     width: 100%;
-    height: 54px;
     top: 0;
     left: 0;
     position: fixed;
@@ -45,8 +46,8 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 54px;
-    padding: 0 15px;
+    height: 65px;
+    padding: 10px 10px 15px 10px;
 }
 
 .logo-container {
@@ -54,7 +55,8 @@ a {
 }
 
 .logo {
-    width: 150px;
+    width: 154px;
+    height: 24px;
 }
 
 .nav-menu {
@@ -78,7 +80,7 @@ a {
 
 .nav-item a {
     color: #fff;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 22px;
     text-transform: uppercase;
 }
@@ -97,7 +99,7 @@ a {
     width: 25px;
     height: 3px;
     background-color: #7c7c7c;
-    margin: 6px;
+    margin: 6px 4px ;
 }
 
 /* Home Page */
@@ -109,42 +111,45 @@ a {
 }
 
 .home img{
-    margin-top: 20px;
+    margin-top: 54px;
     width: 100%;
 }
 
 /* Galery */
 
+.main-grid {
+    grid-area: main;
+}
+
 .galery-item-1 {
-    grid-area: row1;
     width: 100%;
     height: auto;
     padding: 8px 10px 0 10px;
 }
 
 .galery-item-2 {
-    grid-area: row2;
     width: 100%;
     height: auto;
     padding: 8px 10px;
 }
 
 .galery-item-3 {
-    grid-area: row3;
     width: 100%;
     height: auto;
     padding: 0 10px;
 }
 
 .galery-item-4 {
-    grid-area: row4;
     width: 100%;
     height: auto;
     padding: 8px 10px 0 10px;
 }
 
-.galery-item-bottom {
+.img-bottom {
     grid-area: img-bottom;
+}
+
+.img-bottom img {
     width: 100%;
     height: auto;
     padding: 10px 0;
@@ -233,7 +238,7 @@ a {
 
 .mobi-footer-item a {
     color: #fff;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     letter-spacing: 1px;
 }
@@ -243,6 +248,7 @@ a {
  ****/
 
 .main-grid {
+    display: grid;
     grid-template: "header" "main" "map" "footer";
 }
 
@@ -255,7 +261,7 @@ a {
 
 .hours-location {
     color: #fff;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
     
 }
@@ -273,7 +279,7 @@ a {
 
 .direction-item a {
     color: #fff;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 13px;
     text-decoration: underline;
 }
@@ -284,7 +290,7 @@ a {
 }
 
 .hours-item p {
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 13.5px;
 }
 
@@ -303,7 +309,7 @@ a {
 
 .map-container img {
     width: 100%;
-    z-index: -1;
+    z-index: -2;
 }
 
 .btn-map {
@@ -311,14 +317,14 @@ a {
     position: absolute;
     width: 40%;
     padding: 12px 5px;
-    z-index: 999;
+    z-index: -1;
     border: 1px solid #fff;
     margin-bottom: 50px;
 }
 
 .btn-map a {
     color: #fff;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
 }
 
@@ -326,6 +332,7 @@ a {
 MENUS 
 ******/
 .menus-grid {
+    display: grid;
     grid-template: "header" "main" "footer";
 }
 
@@ -351,14 +358,14 @@ MENUS
 
 .btn-menu a {
     color: #c4c4c4;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     text-transform: uppercase;
 }
 
 .date {
     color: #fff;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
     text-align: center;
     margin-bottom: 25px;
@@ -368,4 +375,48 @@ MENUS
     width: 100%;
     align-items: center;
     padding: 0 15px;
+}
+
+/****
+About
+****/
+
+.about-grid {
+    display: grid;
+    grid-template: "header" "main" "footer";
+}
+
+.main-about-container {
+    grid-area: main;
+    margin: 65px 1px 0 1px;
+
+}
+
+.img-about img {
+    width: 100%;
+    padding: 0 .6rem;
+}
+
+.article-about {
+    color: #fff;
+    margin-top: 82px;
+    font-weight: 300;
+}
+
+.article-about h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 4px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin: 0 0 1.5rem 0;
+}
+
+.article-about p {
+    font-family: 'Roboto', sans-serif;
+    font-size: .9rem;
+    line-height: 1.5rem;
+    margin: 0 3.5rem 1rem 3.5rem;
+    letter-spacing: .2px;
 }
