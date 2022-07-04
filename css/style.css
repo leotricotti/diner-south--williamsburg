@@ -93,13 +93,14 @@ a {
     background: none;
     border: none;
     z-index: 2;
+    margin-bottom: 10px;
 }
 
 .nav-toggle div {
     width: 25px;
     height: 3px;
     background-color: #7c7c7c;
-    margin: 6px 4px ;
+    margin: 5px 4px;
 }
 
 /* Home Page */
@@ -419,4 +420,100 @@ About
     line-height: 1.5rem;
     margin: 0 3.5rem 1rem 3.5rem;
     letter-spacing: .2px;
+}
+
+/*****
+Work
+*****/
+
+.work-grid {
+    display: grid;
+    grid-template: "header" "main" "footer";
+}
+
+.work-grid {
+    grid-area: main;
+}
+
+.main-work-container {
+    padding: 8rem 1rem 5rem 1rem;
+}
+
+.intro-work {
+    color: #fff;
+}
+
+.intro-work h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 0 0 25px;
+}
+
+.intro-work p {
+    font-family: 'Roboto', sans-serif;
+    font-size: .85rem;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 23px;
+    margin-bottom: 3.5rem;
+}
+
+.contact input {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: .85rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contact textarea {
+    width: 100%;
+    padding: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: .85rem;
+    color: rgb(5, 5, 5, .7);
+
+}
+
+.btn-resume {
+    color: #fff;
+}
+
+.btn-resume h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: .85rem;
+    font-weight: 300;
+    margin: 1.5rem 0 .8rem 0;
+}
+
+.btn-resume button {
+    width: 40%;
+    padding: 1px 0;
+    margin-bottom: 2rem;
+}
+
+.btn-resume button p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+.btn-apply {
+    width: 100%;
+    background: none;
+    padding: 16px 8px 11px 8px;
+    margin: 16px 0;
+    border: 1px solid #fff;
+}
+
+.btn-apply p {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
 }
