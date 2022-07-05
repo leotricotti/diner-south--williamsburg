@@ -28,7 +28,7 @@ a {
 
 .index-grid {
     display: grid;
-    grid-template: "header" 54px "home" "main" "img-bottom" "footer" "sticky" 25px;
+    grid-template: "header" "home" "main" "img-bottom" "footer" "sticky";
 }
 
 /* Header */
@@ -41,7 +41,7 @@ a {
     top: 0;
     left: 0;
     position: fixed;
-    z-index: 2;
+    z-index: 3;
 }
 
 .header {
@@ -114,7 +114,7 @@ a {
 .hospitality {
     width: 100%;
     display: flex;
-    margin: 10px 20px 30px 0px;
+    margin: 10px 20px 50px 0px;
     line-height: 40px;
     text-align: center;
 }
@@ -185,7 +185,7 @@ a {
     position: fixed;
     bottom: 0;
     left: 0;
-    z-index: 999;
+    z-index: 2;
 }
 
 .mobi-sticky ul {
@@ -267,7 +267,7 @@ a {
 
 .main-grid {
     display: grid;
-    grid-template: "header" "main" "map" "footer";
+    grid-template: "header" "main" "map" "footer" "sticky";
 }
 
 .hours-location-container {
@@ -351,7 +351,7 @@ MENUS
 ******/
 .menus-grid {
     display: grid;
-    grid-template: "header" "main" "footer";
+    grid-template: "header" "main" "footer" "sticky";
 }
 
 .main-menu {
@@ -401,7 +401,7 @@ About
 
 .about-grid {
     display: grid;
-    grid-template: "header" "main" "footer";
+    grid-template: "header" "main" "footer" "sticky";
 }
 
 .main-about-container {
@@ -445,7 +445,7 @@ Work
 
 .work-grid {
     display: grid;
-    grid-template: "header" "main" "footer";
+    grid-template: "header" "main" "footer" "sticky";
 }
 
 .work-grid {
