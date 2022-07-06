@@ -24,12 +24,6 @@ a {
     text-decoration: none;
 }
 
-/* Grid */
-
-.index-grid {
-    display: grid;
-    grid-template: "header" "home" "main" "img-bottom" "footer" "sticky";
-}
 
 /* Header */
 
@@ -83,7 +77,7 @@ a {
 }
 
 .nav-menu-visible {
-    transform: translateY(100%);
+    transform: translateY(0%);
 }
 
 .nav-toggle {
@@ -196,12 +190,17 @@ a {
     letter-spacing: 1px;
 }
 
+/* Grid */
+
+.index-grid {
+    display: grid;
+    grid-template: "header" "home" "main" "img-bottom" "footer" "sticky";
+}
+
 /* Index Home Page */
 
 .home-image-container {
     grid-area: home;
-    width: 100%;
-    height: auto;
     border-top: 1px solid #7c7c7c;
 }
 
@@ -258,7 +257,7 @@ a {
 }
 
 /****
- Hours 
+ Hours
  ****/
 
 .main-grid {
@@ -277,7 +276,7 @@ a {
     color: #fff;
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    
+
 }
 
 .hours-location h1 {
@@ -321,8 +320,12 @@ a {
 
 }
 
-.map-container img {
+.map-location {
+    background-image: url(../img/location/staticmap.png);
     width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center center;
     z-index: -2;
 }
 
@@ -343,7 +346,7 @@ a {
 }
 
 /*****
-MENUS 
+MENUS
 ******/
 .menus-grid {
     display: grid;
@@ -402,14 +405,16 @@ About
 
 .main-about-container {
     grid-area: main;
-    margin: 65px 1px 0 1px;
-
+    margin: 65px 20px 0 10px;
 }
 
-.img-about img {
-    width: 100%;
-    padding: 0 .6rem;
+.img-about {
+    background-image: url(../img/about/About.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
+
 
 .article-about {
     color: #fff;
@@ -481,7 +486,7 @@ Work
     font-family: 'Roboto', sans-serif;
     font-size: .85rem;
     padding: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .contact textarea {
@@ -490,7 +495,6 @@ Work
     font-family: 'Roboto', sans-serif;
     font-size: .85rem;
     color: rgb(5, 5, 5, .7);
-
 }
 
 .btn-resume {
@@ -518,12 +522,15 @@ Work
 .btn-apply {
     width: 100%;
     background: none;
-    padding: 16px 8px 11px 8px;
-    margin: 16px 0;
+    margin: 5px 0;
     border: 1px solid #fff;
 }
 
-.btn-apply p {
+.btn-apply button {
+    border: none;
+}
+
+.btn-apply {
     color: #fff;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
@@ -531,9 +538,152 @@ Work
     text-transform: uppercase;
 }
 
+@media (min-width: 48rem) {
+
+    /* Footer */
+
+    .hospitality-item-uno img {
+        width: 112.23px;
+        height: 23.33px;
+        margin-top: 17px;
+    }
+
+    .hospitality-item-dos img {
+        width: 136.5px;
+        height: 23.16px;
+        margin-top: 15px;
+    }
+
+    .hospitality-item-tres img {
+        width: 72.23px;
+        height: 39.33px;
+        margin-top: 6px;
+    }
+
+    .hospitality-item-cuatro img {
+        width: 72.72px;
+        height: 39.33px;
+        margin-top: 8px;
+    }
+
+    .hospitality-item-cinco img {
+        width: 131.5px;
+        height: 23.91px;
+        margin-top: 15px;
+    }
+
+    .hospitality-item-seis img {
+        width: 148.5px;
+        height: 23.44px;
+        margin-top: 18px;
+    }
+
+    .hospitality-item-siete img {
+        width: 72.45px;
+        height: 39.33px;
+        margin-top: 8px;
+    }
+
+    .hospitality-item-ocho img {
+        width: 75.09px;
+        height: 40.33px;
+        margin-top: 9px;
+    }
+
+    .hospitality-item-nueve img {
+        width: 72.23px;
+        height: 39.33px;
+        margin-top: 9.5px;
+    }
+
+    .hospitality-item-diez img {
+        width: 31.58px;
+        height: 50.33px;
+        margin-top: 5px;
+    }
+
+    /* Galery */
+
+    .main-grid {
+        grid-area: main;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .galery-item-1 {
+        width: 50%;
+        padding: 8px 10px 8px 10px;
+    }
+
+    .galery-item-2 {
+        width: 50%;
+        height: auto;
+        padding: 8px 10px 8px 0px;
+    }
+
+    .galery-item-3 {
+        width: 49%;
+        height: 4;
+        padding: 0 0 8px 10px;
+    }
+
+    .galery-item-4 {
+        width: 50%;
+        height: 40vh;
+        padding: 0 10px 8px 10px;
+    }
+
+    .bottom-img-container {
+        grid-area: img-bottom;
+    }
+
+    .bottom-img {
+        height: 35vh;
+    }
+
+    /****
+    Hours
+    ****/
+
+    .btn-map {
+        width: 15%;
+    }
+
+    /****
+    About
+    ****/
+
+    .main-about-container {
+        display: flex;
+    }
+
+    .main-about-container >* {
+        flex-basis: 100%;
+    }
+
+    .img-about img {
+        width: 100%;
+        height: 1600px;
+    }
+
+    /***
+    Work
+    ***/
+
+    .main-work-container {
+        margin: 0 90px;
+    }
+
+    .btn-apply {
+        width: 100%;
+    }
+
+}
+
 @media (min-width: 62rem) {
+
     /* Header */
-    
+
     .header-container {
         grid-area: header;
         background-color: rgba(0, 0, 0, 0.80);
@@ -544,19 +694,19 @@ Work
         position: fixed;
         z-index: 3;
     }
-    
+
     .header {
         display: flex;
         justify-content: space-between;
         padding: 25px 10px 0px 10px;
     }
-    
+
     .logo {
         width: 370px;
         height: 50px;
         padding: 0 30px;
     }
-    
+
     .nav-menu {
         width: 40%;
         height: auto;
@@ -566,14 +716,14 @@ Work
         transform: none;
         margin-left: 2.5rem;
     }
-    
+
     .nav-item {
         width: auto;
         line-height: 75px;
         text-align: left;
         font-weight: 300;
     }
-    
+
     .nav-item a {
         display: inline;
         color: #fff;
@@ -581,7 +731,7 @@ Work
         font-size: 18px;
         text-transform: uppercase;
     }
-    
+
     .nav-toggle {
         display: none;
     }
@@ -593,7 +743,6 @@ Work
         height: 60px;
         display: flex;
         justify-content: flex-end;
-
     }
 
     .column-two {
@@ -612,7 +761,7 @@ Work
     .column-one :nth-child(5) {
         border-right: 2px solid #fff;
     }
-    
+
     .column-two > * {
         border-right: 2px solid #fff;
         padding: 0 10px;
@@ -683,12 +832,58 @@ Work
     }
 
     /* Sticky */
-    
+
     .mobi-sticky {
         display: none;
     }
 
 
+    /* Index Home Page */
 
+    .home-image {
+        height: 100vh;
+    }
 
-} 
+    /* Galery */
+
+    .galery-item-1 {
+        grid-area: main1;
+        width: 100%;
+        height: auto;
+        padding: 8px 10px 8px 10px;
+    }
+
+    .galery-item-2 {
+        grid-area: main2;
+        width: 100%;
+        height: auto;
+        padding: 0 10px 8px 10px;
+    }
+
+    .galery-item-3 {
+        grid-area: main3;
+        width: 100%;
+        height: auto;
+        padding: 0 10px;
+    }
+
+    .galery-item-4 {
+        grid-area: main4;
+        width: 100%;
+        height: auto;
+        padding: 8px 10px 10px 10px;
+    }
+
+    .bottom-img-container {
+        grid-area: img-bottom;
+    }
+
+    .bottom-img {
+        background-image: url(../img/homepage/home-page-img-6.webp);
+        width: 100%;
+        height: 50vh;
+        background-size: cover;
+        background-position: center center;
+    }
+
+}
