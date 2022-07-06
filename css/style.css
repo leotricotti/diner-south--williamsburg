@@ -24,12 +24,11 @@ a {
     text-decoration: none;
 }
 
-
 /* Header */
 
 .header-container {
     grid-area: header;
-    background-color: rgba(0, 0, 0, 0.80);
+    background-color: rgba(0, 0, 0, 0.70);
     width: 100%;
     height: 54px;
     top: 0;
@@ -194,7 +193,7 @@ a {
 
 .index-grid {
     display: grid;
-    grid-template: "header" "home" "main" "img-bottom" "footer" "sticky";
+    grid-template: "header" 54px "home" "main" "img-bottom" "footer" "sticky";
 }
 
 /* Index Home Page */
@@ -211,7 +210,6 @@ a {
     background-size: cover;
     background-position: center center;
     opacity: 1;
-
 }
 
 /* Galery */
@@ -221,27 +219,42 @@ a {
 }
 
 .galery-item-1 {
+    background-image: url(../img/homepage/home-page-img-2.webp);
     width: 100%;
-    height: auto;
-    padding: 8px 10px 8px 10px;
+    height: 55vh;
+    background-size: cover;
+    background-position: center center;
+    border: 8px solid black;
 }
 
 .galery-item-2 {
+    background-image: url(../img/homepage/home-page-img-3.webp);
     width: 100%;
-    height: auto;
-    padding: 0 10px 8px 10px;
+    height: 55vh;
+    background-size: cover;
+    background-position: center center;
+    border: 8px solid black;
+    border-top: none;
 }
 
 .galery-item-3 {
+    background-image: url(../img/homepage/home-page-img-4.webp);
     width: 100%;
-    height: auto;
-    padding: 0 10px;
+    height: 55vh;
+    background-size: cover;
+    background-position: center center;
+    border: 8px solid black;
+    border-top: none;
 }
 
 .galery-item-4 {
+    background-image: url(../img/homepage/home-page-img-5.webp);
     width: 100%;
-    height: auto;
-    padding: 8px 10px 10px 10px;
+    height: 55vh;
+    background-size: cover;
+    background-position: center center;
+    border: 8px solid black;
+    border-top: none;
 }
 
 .bottom-img-container {
@@ -323,7 +336,7 @@ a {
 .map-location {
     background-image: url(../img/location/staticmap.png);
     width: 100%;
-    height: 40vh;
+    height: 50vh;
     background-size: cover;
     background-position: center center;
     z-index: -2;
@@ -649,6 +662,10 @@ Work
         width: 15%;
     }
 
+    .img-item img{
+        padding: 0 120px;
+    }
+
     /****
     About
     ****/
@@ -685,30 +702,24 @@ Work
     /* Header */
 
     .header-container {
-        grid-area: header;
-        background-color: rgba(0, 0, 0, 0.80);
-        width: 100%;
-        height: 100px;
-        top: 0;
-        left: 0;
-        position: fixed;
-        z-index: 3;
+        height: 75px;
     }
 
     .header {
-        display: flex;
-        justify-content: space-between;
-        padding: 25px 10px 0px 10px;
+        padding: 18px 0px 0px 30px;
     }
 
     .logo {
-        width: 370px;
-        height: 50px;
-        padding: 0 30px;
+        width: 250px;
+        height: 39px;
+    }
+
+    .nav-conmtainer {
+        margin-left: 20px;
     }
 
     .nav-menu {
-        width: 40%;
+        width: 50%;
         height: auto;
         display: flex;
         justify-content: space-around;
@@ -719,17 +730,16 @@ Work
 
     .nav-item {
         width: auto;
-        line-height: 75px;
+        line-height: 25px;
         text-align: left;
         font-weight: 300;
     }
 
     .nav-item a {
         display: inline;
-        color: #fff;
-        font-family: 'Roboto', sans-serif;
-        font-size: 18px;
+        font-size: 14px;
         text-transform: uppercase;
+        letter-spacing: 2px;
     }
 
     .nav-toggle {
