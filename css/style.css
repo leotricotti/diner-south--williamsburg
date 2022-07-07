@@ -193,7 +193,7 @@ a {
 
 .index-grid {
     display: grid;
-    grid-template: "header" 54px "home" "main" "img-bottom" "footer" "sticky";
+    grid-template: "header" 54px "home" "main" "img-bottom" "footer" "sticky" ;
 }
 
 /* Index Home Page */
@@ -205,6 +205,7 @@ a {
 
 .home-image {
     background-image: url(../img/homepage/home-page-img-1.webp);
+    filter: brightness(85%);
     width: 100%;
     height: 50vh;
     background-size: cover;
@@ -224,7 +225,7 @@ a {
     height: 55vh;
     background-size: cover;
     background-position: center center;
-    border: 8px solid black;
+    border: 10px solid black;
 }
 
 .galery-item-2 {
@@ -233,7 +234,7 @@ a {
     height: 55vh;
     background-size: cover;
     background-position: center center;
-    border: 8px solid black;
+    border: 10px solid black;
     border-top: none;
 }
 
@@ -243,7 +244,7 @@ a {
     height: 55vh;
     background-size: cover;
     background-position: center center;
-    border: 8px solid black;
+    border: 10px solid black;
     border-top: none;
 }
 
@@ -253,7 +254,7 @@ a {
     height: 55vh;
     background-size: cover;
     background-position: center center;
-    border: 8px solid black;
+    border: 10px solid black;
     border-top: none;
 }
 
@@ -320,8 +321,6 @@ a {
     font-size: 13.5px;
 }
 
-/* Maps */
-
 .map-container {
     grid-area: map;
     width: 100%;
@@ -330,7 +329,6 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-
 }
 
 .map-location {
@@ -361,6 +359,7 @@ a {
 /*****
 MENUS
 ******/
+
 .menus-grid {
     display: grid;
     grid-template: "header" "main" "footer" "sticky";
@@ -427,7 +426,6 @@ About
     background-size: cover;
     background-position: center center;
 }
-
 
 .article-about {
     color: #fff;
@@ -625,25 +623,25 @@ Work
 
     .galery-item-1 {
         width: 50%;
-        padding: 8px 10px 8px 10px;
     }
 
     .galery-item-2 {
         width: 50%;
         height: auto;
-        padding: 8px 10px 8px 0px;
+        border-left: none;
+        border-top: 10px solid #000;
     }
 
     .galery-item-3 {
-        width: 49%;
-        height: 4;
-        padding: 0 0 8px 10px;
+        width: 50%;
+        height: 50vh;
     }
 
     .galery-item-4 {
         width: 50%;
-        height: 40vh;
-        padding: 0 10px 8px 10px;
+        height: 50vh;
+        border-left: none;
+        border-right: none;
     }
 
     .bottom-img-container {
@@ -690,11 +688,12 @@ Work
     .main-work-container {
         margin: 0 90px;
     }
-
+    
     .btn-apply {
-        width: 100%;
+        width: 13%;
+        padding: 6px 8px;
+        margin: auto;
     }
-
 }
 
 @media (min-width: 62rem) {
@@ -781,66 +780,6 @@ Work
         padding: 0 20px;
     }
 
-    .hospitality-item-uno img {
-        width: 112.23px;
-        height: 23.33px;
-        margin-top: 17px;
-    }
-
-    .hospitality-item-dos img {
-        width: 123.5px;
-        height: 21.16px;
-        margin-top: 15px;
-    }
-
-    .hospitality-item-tres img {
-        width: 72.23px;
-        height: 39.33px;
-        margin-top: 6px;
-    }
-
-    .hospitality-item-cuatro img {
-        width: 72.72px;
-        height: 39.33px;
-        margin-top: 8px;
-    }
-
-    .hospitality-item-cinco img {
-        width: 123.5px;
-        height: 21.91px;
-        margin-top: 15px;
-    }
-
-    .hospitality-item-seis img {
-        width: 123.5px;
-        height: 19.44px;
-        margin-top: 18px;
-    }
-
-    .hospitality-item-siete img {
-        width: 72.45px;
-        height: 39.33px;
-        margin-top: 8px;
-    }
-
-    .hospitality-item-ocho img {
-        width: 75.09px;
-        height: 40.33px;
-        margin-top: 9px;
-    }
-
-    .hospitality-item-nueve img {
-        width: 72.23px;
-        height: 39.33px;
-        margin-top: 9.5px;
-    }
-
-    .hospitality-item-diez img {
-        width: 31.58px;
-        height: 50.33px;
-        margin-top: 5px;
-    }
-
     /* Sticky */
 
     .mobi-sticky {
@@ -896,4 +835,24 @@ Work
         background-position: center center;
     }
 
+    /****
+    Hours
+    ****/
+    
+    .map-location {
+        height: 700px;
+        margin-bottom: 50px;
+    }
+
+    .btn-map {
+      margin-bottom: 100px;
+    }
+
+    /***
+    Work
+    ***/
+
+    .main-work-container {
+        margin: 0 280px;
+    }
 }
